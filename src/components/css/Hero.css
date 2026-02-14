@@ -1,0 +1,127 @@
+/* ===== HERO SECTION ===== */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Premium Gradient */
+  background: #0b1220;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative Glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #6366f1;
+  border-radius: 50%;
+  filter: blur(180px);
+  opacity: 0.25;
+  top: -150px;
+  left: -150px;
+}
+
+/* Content Box */
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 25px;
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* Highlight word */
+.hero h1 span {
+  color: #4f46e5;
+}
+
+/* Paragraph */
+.hero p {
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* Buttons container */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Primary Button */
+.primary-btn {
+  padding: 14px 34px;
+  border-radius: 10px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.25);
+}
+
+.primary-btn:hover {
+  transform: translateY(-4px);
+  /* box-shadow: 0 18px 40px rgba(79, 70, 229, 0.35); */
+}
+
+/* Secondary Button */
+.secondary-btn {
+  padding: 14px 34px;
+  border-radius: 10px;
+  border: 2px solid #4f46e5;
+  background: transparent;
+  color: #4f46e5;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #4f46e5;
+  color: white;
+  transform: translateY(-4px);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-content {
+    margin: 20px;
+    padding: 30px;
+  }
+}
