@@ -1,7 +1,7 @@
 .projects {
   min-height: 100vh;
-  background: #0b1220;
-  padding: 140px 8%;
+  background: #fbfdff;
+  padding: 100px 6%;
   display: flex;
   justify-content: center;
 }
@@ -16,9 +16,9 @@
 /* TITLE */
 
 .projects-title {
-  color: white;
-  font-size: 56px;
-  margin-bottom: 70px;
+  color: #0f172a;
+  font-size: 40px;
+  margin-bottom: 36px;
 }
 
 /* GRID */
@@ -32,42 +32,63 @@
 /* CARD */
 
 .project-card {
-  padding: 40px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: 0.35s;
+  padding: 24px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid rgba(15,23,42,0.04);
+  transition: 0.28s;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 44px rgba(15,23,42,0.08);
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
-  border: 1px solid #6366f1;
+.project-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: var(--accent-gradient);
 }
+
+.project-card h2 { margin-top: 8px; }
+.project-card p { color: var(--muted-2); }
 
 /* TEXT */
 
 .project-card h2 {
-  color: white;
+  color: #0f172a;
 }
 
 .project-card p {
-  color: #94a3b8;
-  margin: 15px 0 25px;
+  color: #475569;
+  margin: 12px 0 18px;
 }
 
 /* BUTTON */
 
 .project-card button {
-  padding: 12px 24px;
+  padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background: #4f46e5;
+  background: var(--accent-gradient);
   color: white;
   font-weight: 600;
   cursor: pointer;
 }
 
 .project-card button:hover {
-  background: #6366f1;
+  transform: translateY(-4px);
+}
+
+@media (max-width: 900px) {
+  .projects { padding: 60px 4%; }
+  .projects-title { font-size: 32px; }
 }

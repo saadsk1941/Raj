@@ -5,28 +5,37 @@ function Projects() {
     <section className="projects">
       <title>Projects | Raj Computers</title>
       <div className="projects-wrapper">
-        <h1 className="projects-title">My Projects</h1>
+        <h1 className="projects-title">Case Studies & Work</h1>
 
         <div className="projects-grid">
           <div className="project-card">
-            <h2>Payroll System</h2>
-            <p>
-              Full-stack payroll software with automated salary generation and
-              employee management.
-            </p>
-            <button>View Project</button>
+            <h2>SaaS Platform</h2>
+            <p>Built a multi-tenant SaaS platform with role-based access, billing, and analytics.</p>
+            <button onClick={() => window.open('#')}>View Case</button>
           </div>
 
           <div className="project-card">
-            <h2>CRUD Application</h2>
-            <p>React + PHP app with authentication and filtering.</p>
-            <button>View Project</button>
+            <h2>Mobile Marketplace</h2>
+            <p>End-to-end mobile marketplace (iOS & Android) with real-time messaging and payments.</p>
+            <button onClick={() => window.open('#')}>View Case</button>
           </div>
 
           <div className="project-card">
-            <h2>Excel Report Tool</h2>
-            <p>Dynamic Excel reports using PhpSpreadsheet.</p>
-            <button>View Project</button>
+            <h2>API Integration</h2>
+            <p>Integrated multiple third-party services and built a stable public API for partners.</p>
+            <button onClick={() => window.open('#')}>View Case</button>
+          </div>
+
+          <div className="project-card">
+            <h2>Data Pipeline</h2>
+            <p>Implemented ETL pipelines and dashboards for business intelligence.</p>
+            <button onClick={() => window.open('#')}>View Case</button>
+          </div>
+
+          <div className="project-card">
+            <h2>Legacy Modernization</h2>
+            <p>Rewrote legacy monolith into microservices with zero-downtime migration.</p>
+            <button onClick={() => window.open('#')}>View Case</button>
           </div>
         </div>
       </div>

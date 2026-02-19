@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import Home from './pages/Home'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
